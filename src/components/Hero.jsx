@@ -81,7 +81,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/resume/Seyed's_CV.pdf"
+              href="/resume/M.Seyed_mohamed_Rifthan_CV.pdf"
               download
               className="inline-flex items-center gap-3 rounded-full border border-slate-700 px-7 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-400"
             >
@@ -99,7 +99,7 @@ export default function Hero() {
             </span>
 
             <a
-              href="https://github.com/YOUR_USERNAME"
+              href="https://github.com/rifthan"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -109,7 +109,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/in/YOUR_USERNAME"
+              href="https://www.linkedin.com/in/seyed-mohamed-rifthan-a977b4329/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"

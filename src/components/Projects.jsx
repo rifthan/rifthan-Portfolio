@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Text Emotion Classifier",
     category: "Machine Learning",
-    image: "/images/projects/emotion-classifier.png",
+    image: "/images/projects/Text_Emotion_Classification.png",
     description:
       "A machine learning project that classifies text into emotion categories using Natural Language Processing, TF-IDF feature extraction, and Support Vector Machine.",
     technologies: ["Python", "Pandas", "Scikit-learn", "TF-IDF", "SVM"],
@@ -22,13 +22,29 @@ const projects = [
   {
     title: "Restaurant Management System",
     category: "Full-Stack Development",
-    image: "/images/projects/restaurant-management.png",
+    image: "/images/projects/Restaurant_Management.png"
     description:
       "A restaurant management application featuring menu management, order processing, role-based authentication, and sales reporting.",
     technologies: ["React.js", "Python", "Flask", "SQLite", "SQLAlchemy"],
   },
-];
+  {
+    title:"Loan Approval Classification",
+    category:"Machine Learning",
+    image:"images/projects/Loan_Classfication.png",
+    description:
+        "A machine learning application that predicts loan approval or rejection based on applicant details using classification algorithms.",
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
 
+  },
+  {
+    title:"Gamified Learning APP",
+    category:"Full-stack Development",
+    image:"image/projects/Gamified_Learning.png",
+    description:
+        ""
+  }
+];
+A
 export default function Projects() {
   return (
     <section
