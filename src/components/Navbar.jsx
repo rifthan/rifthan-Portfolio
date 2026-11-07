@@ -38,7 +38,7 @@ export default function Navbar() {
 
         {/* Resume Button */}
         <a
-          href="/resume/M.Seyed_mohamed_Rifthan_CV.pdf"
+          href="/public/images/SeyedMohamedRifthan.pdf"
           download
           className="hidden items-center gap-2 rounded-full border border-blue-500/50 px-5 py-2.5 text-sm font-semibold text-blue-400 transition hover:bg-blue-600 hover:text-white md:inline-flex"
         >

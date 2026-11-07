@@ -81,7 +81,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/resume/M.Seyed_mohamed_Rifthan_CV.pdf"
+              href="/public/resume/SeyedMohamedRifthan.pdf"
               download
               className="inline-flex items-center gap-3 rounded-full border border-slate-700 px-7 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-400"
             >
