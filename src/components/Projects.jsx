@@ -22,37 +22,30 @@ const projects = [
   {
     title: "Restaurant Management System",
     category: "Full-Stack Development",
-    image: "/images/projects/Restaurant_Management.png"
+    image: "/images/projects/Restaurant_Management.png",
     description:
       "A restaurant management application featuring menu management, order processing, role-based authentication, and sales reporting.",
     technologies: ["React.js", "Python", "Flask", "SQLite", "SQLAlchemy"],
   },
   {
-    title:"Loan Approval Classification",
-    category:"Machine Learning",
-    image:"images/projects/Loan_Classfication.png",
+    title: "Loan Approval Classification",
+    category: "Machine Learning",
+    image: "images/projects/Loan_Classification.png",
     description:
-        "A machine learning application that predicts loan approval or rejection based on applicant details using classification algorithms.",
-    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
-
+      "A machine learning application that predicts loan approval or rejection based on applicant details using classification algorithms.",
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Machine Learning",
+    ],
   },
-  {
-    title:"Gamified Learning APP",
-    category:"Full-stack Development",
-    image:"image/projects/Gamified_Learning.png",
-    description:
-        ""
-  }
 ];
-A
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="bg-slate-50 px-6 py-28 text-slate-900"
-    >
+    <section id="projects" className="bg-slate-50 px-6 py-28 text-slate-900">
       <div className="mx-auto max-w-7xl">
-
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -71,16 +64,14 @@ export default function Projects() {
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            A selection of projects showcasing my work in
-            Data Analytics, Machine Learning, and Software Development.
+            A selection of projects showcasing my work in Data Analytics,
+            Machine Learning, and Software Development.
           </p>
         </motion.div>
 
         {/* Project Cards */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-
           {projects.map((project, index) => (
-
             <motion.article
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -92,22 +83,19 @@ export default function Projects() {
               }}
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-300 hover:shadow-xl"
             >
-
               {/* Project Image */}
-              <div className="h-56 overflow-hidden bg-slate-200">
 
+              <div className="h-56 overflow-hidden bg-slate-100 rounded-t-xl flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={`${project.title} preview`}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-
               </div>
 
               {/* Project Content */}
               <div className="p-7">
-
                 <span className="inline-block rounded-full bg-blue-50 px-4 py-2 text-xs font-semibold text-blue-600">
                   {project.category}
                 </span>
@@ -122,36 +110,25 @@ export default function Projects() {
 
                 {/* Technologies */}
                 <div className="mt-6 border-t border-slate-100 pt-5">
-
                   <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-400">
                     Technologies Used
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-
                     {project.technologies.map((technology) => (
-
                       <span
                         key={technology}
                         className="rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-slate-700 transition hover:bg-blue-100 hover:text-blue-700"
                       >
                         {technology}
                       </span>
-
                     ))}
-
                   </div>
-
                 </div>
-
               </div>
-
             </motion.article>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );
